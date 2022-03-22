@@ -2,7 +2,12 @@ import FioriThemeManager
 import SwiftUI
 
 struct ColorPaletteView: View {
+    @Binding var colorScheme: ColorScheme?
     @Binding var paletteVersion: PaletteVersion
+
+    var backgroundColorScheme: BackgroundColorScheme {
+        colorScheme == .dark ? .darkConstant : .lightConstant
+    }
     
     var body: some View {
         ScrollView {
@@ -18,7 +23,7 @@ struct ColorPaletteView: View {
                             .padding()
                         VStack(alignment: .leading) {
                             Text(colorStyle.rawValue).font(.title)
-                            Text(Color.preferredColor(colorStyle).toHex() ?? "N/A").italic()
+                            Text(Color.preferredColor(colorStyle, background: backgroundColorScheme).toHex() ?? "N/A").italic()
                                 .textSelection(.enabled)
                         }
                     }
@@ -31,11 +36,6 @@ struct ColorPaletteView: View {
 
 private extension Array where Element == GridItem {
     static func flexible(_ amount: Int) -> [GridItem] {
-        guard amount > 0 else { return [GridItem(.flexible())] }
-        var result = [GridItem]()
-        for _ in 0 ... amount-1 {
-            result.append(GridItem(.flexible()))
-        }
-        return result
+        return Array(repeating: GridItem(.flexible()), count: amount)
     }
 }

@@ -15,8 +15,9 @@ struct ContentView: View {
                 colorScheme: $colorScheme
             )
 
+
             ColorPaletteView(
-                paletteVersion: $selectedColorPaletteVersion
+                colorScheme: $colorScheme, paletteVersion: $selectedColorPaletteVersion
             )
         }
         .padding()
