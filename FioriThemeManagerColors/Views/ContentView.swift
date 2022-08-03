@@ -2,7 +2,7 @@ import FioriThemeManager
 import SwiftUI
 
 struct ContentView: View {
-    @State var selectedColorPaletteVersion: PaletteVersion = .v6
+    @State var selectedColorPaletteVersion: PaletteVersion = .v7
 
     @Environment(\.colorScheme) var systemColorScheme
     @State var colorScheme: ColorScheme?

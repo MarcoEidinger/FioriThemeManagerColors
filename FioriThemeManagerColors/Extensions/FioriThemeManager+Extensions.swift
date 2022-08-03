@@ -13,6 +13,8 @@ extension PaletteVersion {
             return "5"
         case .v6:
             return "6"
+        case .v7:
+            return "7"
         }
     }
 }

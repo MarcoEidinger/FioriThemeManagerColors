@@ -1,43 +1,41 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "AnyCodable",
-        "repositoryURL": "https://github.com/Flight-School/AnyCodable.git",
-        "state": {
-          "branch": null,
-          "revision": "b1a7a8a6186f2fcb28f7bda67cfc545de48b3c80",
-          "version": "0.6.2"
-        }
-      },
-      {
-        "package": "FioriSwiftUI",
-        "repositoryURL": "https://github.com/SAP/cloud-sdk-ios-fiori",
-        "state": {
-          "branch": null,
-          "revision": "6f3ad8491dbacbad22b6ea8bd51b99f0e778e0d9",
-          "version": "2.0.1"
-        }
-      },
-      {
-        "package": "ObservableArray",
-        "repositoryURL": "https://github.com/sstadelman/observable-array.git",
-        "state": {
-          "branch": null,
-          "revision": "8cc76410f71b6653897f974b453e9a15ef8f96b4",
-          "version": "1.2.0"
-        }
-      },
-      {
-        "package": "Zip",
-        "repositoryURL": "https://github.com/MarcoEidinger/Zip.git",
-        "state": {
-          "branch": null,
-          "revision": "059e7346082d02de16220cd79df7db18ddeba8c3",
-          "version": "2.1.2"
-        }
+  "pins" : [
+    {
+      "identity" : "anycodable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Flight-School/AnyCodable.git",
+      "state" : {
+        "revision" : "f9fda69a7b704d46fb5123005f2f7e43dbb8a0fa",
+        "version" : "0.6.5"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "cloud-sdk-ios-fiori",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SAP/cloud-sdk-ios-fiori",
+      "state" : {
+        "revision" : "876f83c0654db9c808f575d911d3af8edae28a8d",
+        "version" : "2.2.0"
+      }
+    },
+    {
+      "identity" : "observable-array",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sstadelman/observable-array.git",
+      "state" : {
+        "revision" : "8cc76410f71b6653897f974b453e9a15ef8f96b4",
+        "version" : "1.2.0"
+      }
+    },
+    {
+      "identity" : "zip",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/MarcoEidinger/Zip.git",
+      "state" : {
+        "revision" : "059e7346082d02de16220cd79df7db18ddeba8c3",
+        "version" : "2.1.2"
+      }
+    }
+  ],
+  "version" : 2
 }

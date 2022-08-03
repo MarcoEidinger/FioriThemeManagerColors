@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A80A7C6289ADB2800909312 /* FioriThemeManager in Frameworks */ = {isa = PBXBuildFile; productRef = 8A80A7C5289ADB2800909312 /* FioriThemeManager */; };
+		8A80A7C7289ADB2800909312 /* FioriThemeManager in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 8A80A7C5289ADB2800909312 /* FioriThemeManager */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8AD023E927C0291800A12BC1 /* FioriThemeManagerColorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD023E827C0291800A12BC1 /* FioriThemeManagerColorsApp.swift */; };
 		8AD023ED27C0291C00A12BC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AD023EC27C0291C00A12BC1 /* Assets.xcassets */; };
 		8AD023F027C0291C00A12BC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AD023EF27C0291C00A12BC1 /* Preview Assets.xcassets */; };
-		8AD023FE27C02A5500A12BC1 /* FioriSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8AD023FD27C02A5500A12BC1 /* FioriSwiftUI */; };
 		8AD0240827C02D2300A12BC1 /* ColorPaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD0240227C02D2300A12BC1 /* ColorPaletteView.swift */; };
 		8AD0240927C02D2300A12BC1 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD0240327C02D2300A12BC1 /* SidebarView.swift */; };
 		8AD0240A27C02D2300A12BC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD0240427C02D2300A12BC1 /* ContentView.swift */; };
 		8AD0240B27C02D2300A12BC1 /* FioriThemeManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD0240627C02D2300A12BC1 /* FioriThemeManager+Extensions.swift */; };
 		8AD0240C27C02D2300A12BC1 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD0240727C02D2300A12BC1 /* Color+Extension.swift */; };
-		8AD0240D27C02F6B00A12BC1 /* FioriSwiftUI in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 8AD023FD27C02A5500A12BC1 /* FioriSwiftUI */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +26,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8AD0240D27C02F6B00A12BC1 /* FioriSwiftUI in Embed Frameworks */,
+				8A80A7C7289ADB2800909312 /* FioriThemeManager in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,18 +52,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AD023FE27C02A5500A12BC1 /* FioriSwiftUI in Frameworks */,
+				8A80A7C6289ADB2800909312 /* FioriThemeManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A80A7C1289ADAFA00909312 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8AD023DC27C0291700A12BC1 = {
 			isa = PBXGroup;
 			children = (
 				8AD023E727C0291800A12BC1 /* FioriThemeManagerColors */,
 				8AD023E627C0291800A12BC1 /* Products */,
+				8A80A7C1289ADAFA00909312 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,7 +142,7 @@
 			);
 			name = FioriThemeManagerColors;
 			packageProductDependencies = (
-				8AD023FD27C02A5500A12BC1 /* FioriSwiftUI */,
+				8A80A7C5289ADB2800909312 /* FioriThemeManager */,
 			);
 			productName = FioriThemeManagerColors;
 			productReference = 8AD023E527C0291800A12BC1 /* FioriThemeManagerColors.app */;
@@ -328,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FioriThemeManagerColors/FioriThemeManagerColors.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"FioriThemeManagerColors/Preview Content\"";
 				DEVELOPMENT_TEAM = 6V66CC3AN6;
 				ENABLE_PREVIEWS = YES;
@@ -345,7 +353,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.FioriThemeManagerColors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
@@ -362,7 +370,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FioriThemeManagerColors/FioriThemeManagerColors.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"FioriThemeManagerColors/Preview Content\"";
 				DEVELOPMENT_TEAM = 6V66CC3AN6;
 				ENABLE_PREVIEWS = YES;
@@ -379,7 +387,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.FioriThemeManagerColors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
@@ -424,10 +432,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8AD023FD27C02A5500A12BC1 /* FioriSwiftUI */ = {
+		8A80A7C5289ADB2800909312 /* FioriThemeManager */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8AD023FC27C02A5500A12BC1 /* XCRemoteSwiftPackageReference "cloud-sdk-ios-fiori" */;
-			productName = FioriSwiftUI;
+			productName = FioriThemeManager;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
